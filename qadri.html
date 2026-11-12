@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qadri Pro | Cyber Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <div class="dashboard">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-icon">⌘</span>
+        <span>QADRI<span class="accent">PRO</span></span>
+      </div>
+
+      <p class="nav-label">WORKSPACE</p>
+      <button class="nav-btn active" data-tool="dashboard">▦ Dashboard</button>
+      <button class="nav-btn" data-tool="system">⌘ System Info</button>
+      <button class="nav-btn" data-tool="network">⌁ Network Guide</button>
+      <button class="nav-btn" data-tool="password">◇ Password Checker</button>
+      <button class="nav-btn" data-tool="generator">⚡ Number Generator</button>
+
+      <p class="nav-label">PREFERENCES</p>
+      <button class="nav-btn" id="themeBtn">◐ Change Theme</button>
+      <button class="nav-btn" id="clearBtn">⌫ Clear Terminal</button>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        LOCAL INTERFACE ACTIVE
+        <small>Qadri Pro v2.0</small>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">CYBERSPACE / LOCAL DASHBOARD</p>
+          <h1>Welcome back, <span class="accent">LET'S MOVE THE INTERNET.</span></h1>
+        </div>
+        <div class="online-pill">
+          <span class="status-dot"></span> SYSTEM ONLINE
+        </div>
+      </header>
+
+      <section class="stats">
+        <article class="stat-card">
+          <span class="stat-icon">◈</span>
+          <p>INTERFACE</p>
+          <h2>ONLINE</h2>
+          <small>Browser dashboard</small>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">⌘</span>
+          <p>TOOLS</p>
+          <h2 id="toolCount">05</h2>
+          <small>Interactive modules</small>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">◉</span>
+          <p>SECURITY</p>
+          <h2>PRIVATE</h2>
+          <small>2 servers connection breached</small>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <div class="panel terminal-panel">
+          <div class="panel-heading">
+            <div>
+              <span class="status-dot"></span>
+              <strong>QADRI TERMINAL</strong>
+            </div>
+            <span class="muted">SESSION_01</span>
+          </div>
+
+          <div id="output" class="terminal-output" aria-live="polite">
+            <p class="green">QADRI PRO TERMINAL [Version 2.0]</p>
+            <p>Cyber dashboard initialized.</p>
+            <p>Type <span class="accent">help</span> to view commands.</p>
+            <p class="muted">------------------------------------</p>
+          </div>
+
+          <form id="commandForm" class="command-line">
+            <label for="commandInput">operator@qadri:~$</label>
+            <input id="commandInput" autocomplete="off"
+              placeholder="Enter command..." spellcheck="false">
+            <button type="submit">RUN ↵</button>
+          </form>
+        </div>
+
+        <div class="panel tool-panel">
+          <div class="panel-heading">
+            <strong>CONTROL CENTER</strong>
+            <span class="muted">TOOLS</span>
+          </div>
+
+          <div id="toolContent">
+            <p class="eyebrow">QUICK ACTIONS</p>
+            <h2>Select a module</h2>
+            <p class="muted">Choose a tool to launch it in this panel.</p>
+
+            <button class="action-btn" data-tool="system">⌘ System information</button>
+            <button class="action-btn" data-tool="network">⌁ Network guide</button>
+            <button class="action-btn" data-tool="password">◇ Check password strength</button>
+            <button class="action-btn" data-tool="generator">⚡ Generate random breached information number</button>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>QADRI PRO <span class="accent">V2.0</span></span>
+        <span>LEARN • BUILD • SECURE</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
