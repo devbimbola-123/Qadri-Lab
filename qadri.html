@@ -25,6 +25,9 @@
       <button class="nav-btn" data-tool="network">⌁ Network Guide</button>
       <button class="nav-btn" data-tool="password">◇ Password Checker</button>
       <button class="nav-btn" data-tool="generator">⚡ Number Generator</button>
+      <button class="nav-btn" data-tool="cyberLab">
+        🛡️ Cyber Lab
+      </button>
 
       <p class="nav-label">PREFERENCES</p>
       <button class="nav-btn" id="themeBtn">◐ Change Theme</button>
@@ -36,7 +39,7 @@
         <small>Qadri Pro v2.0</small>
       </div>
     </aside>
-
+     
     <main class="main-content">
       <header class="topbar">
         <div>
@@ -67,6 +70,127 @@
           <h2>PRIVATE</h2>
           <small>2 servers connection breached</small>
         </article>
+      </section>
+
+      <section class="cyber-challenge">
+        <div class="panel">
+          <p class="eyebrow">TRAINING MODULE</p>
+          <h2>QADRI CYBER CHALLENGE</h2>
+          <p class="muted">
+            Test your cybersecurity knowledge.
+          </p>
+          <div class="difficulty-options">
+            <button class="difficulty-btn active" data-level="beginner">
+              Beginner
+            </button>
+
+            <button class="difficulty-btn" data-level="intermediate">
+              Intermediate
+            </button>
+
+            <button class="difficulty-btn" data-level="advanced">
+              Advanced
+            </button>
+            <div class="quiz-area">
+              <div class="quiz-info">
+                <span id="question-count">QUESTION 1</span>
+                <span id="quiz-score">SCORE: 0</span>
+                <span id="quiz-xp">XP: 0</span>
+              </div>
+
+              <div class="level-panel">
+                <div class="level-info">
+                  <span id="user-level">LEVEL 1 — ROOKIE</span>
+                  <span id="level-progress-text">0 / 50 XP</span>
+                </div>
+
+                <div class="level-progress">
+                  <div id="level-progress-fill"></div>
+                </div>
+              </div>
+
+              <div class="achievements">
+                <h3>🏆 ACHIEVEMENTS</h3>
+
+                <div class="badge-list">
+                  <div class="achievement locked" id="badge-first">
+                    🥉 First Steps
+                    <small>Earn 10 XP</small>
+                  </div>
+
+                  <div class="achievement locked" id="badge-learner">
+                    🥈 Cyber Learner
+                    <small>Reach 50 XP</small>
+                  </div>
+
+                  <div class="achievement locked" id="badge-expert">
+                    🥇 Cyber Expert
+                    <small>Reach 100 XP</small>
+                  </div>
+                </div>
+              </div>
+
+              <div id="achievement-toast" class="achievement-toast">
+                <span class="toast-icon">🏆</span>
+
+                <div>
+                  <strong>ACHIEVEMENT UNLOCKED!</strong>
+                  <p id="toast-message">You earned a new badge!</p>
+                </div>
+              </div>
+
+              <h3 id="quiz-question">
+                Ready to test your cybersecurity knowledge?
+              </h3>
+
+              <div id="quiz-options"></div>
+
+              <p id="quiz-feedback"></p>
+
+              <button id="next-question" disabled>
+                Next Question →
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="daily-challenge">
+        <div class="panel">
+
+          <p class="eyebrow">DAILY MISSION</p>
+
+          <h2>QADRI DAILY CYBER QUEST</h2>
+
+          <p class="muted">
+            A new cybersecurity challenge awaits you every day.
+          </p>
+
+          <div class="daily-stats">
+            <div>
+              <span>DAILY BONUS</span>
+              <strong>+25 XP</strong>
+            </div>
+
+            <div>
+              <span>CURRENT STREAK</span>
+              <strong id="daily-streak">0 DAYS</strong>
+            </div>
+          </div>
+
+          <div class="daily-question">
+            <h3 id="daily-question">
+              Your daily mission is loading...
+            </h3>
+
+            <div id="daily-options"></div>
+
+            <p id="daily-feedback"></p>
+          </div>
+
+          <p id="daily-status">MISSION STATUS: PENDING</p>
+
+        </div>
       </section>
 
       <section class="workspace">
